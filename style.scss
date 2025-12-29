@@ -1,0 +1,49 @@
+@import "bootstrap/scss/bootstrap";
+
+body {
+  background-color: #05070a;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+// 滿版主視覺
+.hero-section {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), 
+              url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1920');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  
+  h1 { text-shadow: 0 0 30px #0dcaf0; }
+}
+
+.section-title {
+  position: relative;
+  display: inline-block;
+  font-weight: 800;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -15px; left: 0; width: 60px; height: 4px;
+    background: #0dcaf0;
+    box-shadow: 0 0 10px #0dcaf0;
+  }
+}
+
+// 講者輪播優化
+#speakerCarousel {
+  .carousel-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+}
+
+// 表單輸入框焦點
+.form-control:focus {
+  background-color: #000;
+  border-color: #0dcaf0;
+  box-shadow: 0 0 10px rgba(13, 202, 240, 0.5);
+  color: #fff;
+}

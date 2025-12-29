@@ -1,0 +1,30 @@
+{
+  "name": "1110211037-final-exam",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1110211037/1110211037-final-exam.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1110211037/1110211037-final-exam/issues"
+  },
+  "homepage": "https://github.com/1110211037/1110211037-final-exam#readme",
+  "devDependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.8",
+    "sass": "^1.97.1",
+    "vite": "^7.3.0"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "bootstrap-icons": "^1.13.1"
+  }
+}
