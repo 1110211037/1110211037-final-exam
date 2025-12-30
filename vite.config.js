@@ -1,10 +1,16 @@
-const path = require('path')
-export default {
-    root: path.resolve(__dirname, 'src'),
-    build: {
-        outDir: '../dist'
-    },
-    server: {
-        port: 8080
+import { defineConfig } from 'vite'
+import path from 'path'
+
+export default defineConfig({
+  root: './',
+  base: './',
+  server: {
+    port: 8080,
+    open: true
+  },
+  resolve: {
+    alias: {
+      '~bootstrap': path.resolve(__dirname, 'node_modules/bootstrap'),
     }
-}
+  }
+})
